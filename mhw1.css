@@ -1,0 +1,425 @@
+  
+body {
+    margin: 0;
+    font-family: Yantramanav;
+}
+
+header {
+
+    cursor: pointer; /* pointer perchè dovrebbe portare alla pagina del film */
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition-duration: 0.2s;
+    transition-delay: 1s;
+    width: 100%;
+    min-height: 600px;
+    background-image: url("preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header:hover {
+
+    background-image: url("preview.gif");
+
+}
+
+nav {
+
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    height: 6vh;
+    min-height: 40px;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-top: 2vh;
+    padding-bottom: 0;
+    cursor: default;
+    color: lightgray;
+    font-weight: bold;
+
+}
+
+#top_menu_icon_left {
+
+    display: none;
+
+}
+
+#nav_logo {
+
+    cursor: pointer;
+    margin-right: 2vw;
+    height: 30px;
+    width: 100px;
+    background-image: url("mubi_logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-shrink: 0;
+
+}
+
+#in_cartellone {
+
+    color: white; /* avremmo potuto imporre questo colore anche in html,
+    senza dover creare quindi un'altro id e scrivere altro codice in css*/
+
+}
+
+.search {
+
+    cursor: text;
+    margin-left: 2vw;
+    width: 25vw;
+
+}
+
+nav .material-symbols-outlined {
+
+    color: white;
+    font-size: 1.4rem;
+
+}
+
+.top_menu_element {
+
+    margin-right: 1.5vw;
+
+}
+
+#in_cartellone {
+
+    color: white;
+
+}
+
+.top_menu_element:hover {
+
+    color: white;
+    cursor: pointer;
+
+}
+
+.avatar_wrapper{
+
+    width: 35px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1vw;
+
+}
+
+#avatar {
+
+    display: inline;
+    height: 20px;
+    width: 20px;
+    border-radius: 3px;
+    background-image: url(avatar.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1px;
+    margin-right: 5px;
+    cursor: pointer;
+
+}
+
+#blue_dot {
+
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: blue;
+    cursor: pointer;
+
+}
+
+#top_menu_icon {
+
+    cursor: pointer;
+
+}
+
+.big_showcase {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    height: 92vh;
+    width: 80vw;
+    margin: auto;
+    color: white;
+
+}
+
+.big_showcase footer {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+header.p {
+
+    font-weight: lighter;
+
+}
+
+.big_title {
+
+    font-size: 3em;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+
+}
+
+footer.big_showcase {
+    
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.material-symbols-outlined {
+
+    vertical-align: middle;
+
+}
+
+.watch {
+
+    border: none;
+    background: white;
+    border-radius: 50px;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 1vw;
+    vertical-align: middle;
+    flex-shrink: 0;
+
+}
+
+.watch:hover {
+
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition-duration: 0.2s;
+
+}
+
+.watchlist {
+
+    border-width: 1px;
+    border-color: white;
+    border-style: solid;
+    background: none;
+    border-radius: 100%;
+    color: white;
+    margin-right: 10vw;
+    height: 38px;
+    width: 38px;
+
+
+}
+
+.watchlist:hover {
+
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition-duration: 0.2s;
+
+}
+
+.spacer {
+
+    flex-grow: 10;
+
+}
+
+footer p {
+
+    font-weight: light;
+
+}
+
+header strong:hover {
+
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+main {
+
+    width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+section h3 {
+
+    display: inline;
+
+}
+
+.hiding {
+
+    color: gray;
+    font-weight: light;
+    opacity: 0;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition-duration: 0.2s;
+
+}
+
+.hiding:hover {
+
+    opacity: 1;  /* per avere un effetto più accurato dovremmo usare javascript 
+                    per applicare questa classe quando il cursore passa su tutto il blocco "vetrina", solo con css potremmo
+                    provare a rendere il blocco contenente "vedi tutto" grande quanto tutta la vetrina e poi cercare di
+                    posizionare il testo in maniera da far sembrare che sia un blocco dopo "continua a guardare" */
+
+}
+
+.carousel {
+
+    margin-top: 3vh;
+
+}
+
+.showcase {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1vh;
+
+}
+
+.poster {
+
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition-duration: 0.2s;
+    width: 25vw;
+    height: 15vw;
+    background-color: red;
+
+}
+
+.poster:hover {
+
+    transition-delay: 0.5s;
+    width: 27vw;
+    height: 17vw;
+
+}
+
+img {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.film_info_b {
+
+    display: none;
+
+}
+
+.showcase_description {
+
+    font-size: 1vw;
+    line-height: 0.3rem;
+    color: white;
+    position: relative;
+    bottom: 5vw;
+    margin-left: 1.5vw;
+
+}
+
+@media  (max-width: 1000px) {
+
+    nav{
+        justify-content: space-between;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .top_menu_element {
+        display: none;
+    }
+    
+    #avatar {
+        display: none;
+    }
+
+    .avatar_wrapper {
+        height: 50%;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #top_menu_icon_left {
+        display: block;
+    }
+
+    #top_menu_icon {
+        display: none;
+    }
+
+    #nav_spacer {
+        display: none;
+    }
+
+}
+
+@media  (max-width: 700px) {
+
+    .film_info_r {
+        display: none;
+    }
+
+    .film_info_b {
+        display: block;
+    }
+
+    .showcase {
+        justify-content: center;
+    }
+
+    .poster {
+        width: 65vw;
+        height: 45vw;
+    }
+
+    .poster:hover{
+        width: 47vw;
+        height: 67vw;
+    }
+
+    .secondary {
+        opacity: 0;
+        display: none;
+    }
+
+    .showcase_description {
+        font-size: 3vw;
+        bottom: 13vw;
+    }
+
+}
